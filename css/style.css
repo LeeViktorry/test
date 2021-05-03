@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+}
+
+.gridParent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    grid-gap: 20px;
+    margin: 50px 20px;
+}
+.card1{
+    background: url('https://cdn57.androidauthority.net/wp-content/uploads/2018/09/master-photography.jpg') center / cover;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    border-radius: 5px;
+}
+.card2{
+    background: url('https://www.brides.com/thmb/yOib-Hyp2Up374UkSycmvqF9eLc=/2500x2500/smart/filters:no_upscale()/sq-07f580393a4842c5bb2e1636ed01311e.jpg') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    border-radius: 5px;
+}
+.card4{ 
+    background: url('https://specials-images.forbesimg.com/imageserve/957976460/960x0.jpg?fit=scale') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-row: 3/5;
+    grid-column: 1 / 3 ;
+    border-radius: 5px;
+}
+.card5{
+    background: url('https://www.getolympus.com/media/wysiwyg/home/Homepage_F40.jpg') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-row: 7/8;
+    grid-column: 1 / 2 ;
+    border-radius: 5px;
+}
+.card6{
+    background: url('https://m.buro247.my/images/2021/01/1610442068658679.jpg') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-row: 7/8;
+    grid-column: 3 / 4 ;
+    border-radius: 5px;
+}
+.card7{
+    background: url('https://www.shawacademy.com/assets/course-cards/website/wide/photography-1.png') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-column: 3/4;
+    grid-row: 2/4;
+    border-radius: 5px;
+}
+.card8{
+    background: url('https://photorumors.com/wp-content/uploads/2020/02/Fujifilm-X100V-compact-fixed-lens-camera-5.jpg') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-row: 7/9;
+    grid-column: 2 / 3 ;
+    border-radius: 5px;
+}
+.card9{
+    background: url('https://phlearn.com/wp-content/uploads/2018/09/Kawika-Singson-1.jpg?fit=1600%2C1066&quality=99&strip=all') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-column: 3/4;
+    grid-row: 4/7;
+    border-radius: 5px;
+}
+.card10{
+    background: url('https://cdn.asiatatler.com/asiatatler/i/th/2019/08/27155441-f-photographer1_cover_1500x1000.jpg') top / cover;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 5/7;
+    border-radius: 5px;
+}
+
+.card11{
+    background: url('https://www.shawacademy.com/assets/course-cards/website/wide/photography-1.png') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-row: 8/9;
+    grid-column: 1 / 2 ;
+    border-radius: 5px;
+}
+.card12{
+    background: url('https://phlearn.com/wp-content/uploads/2018/09/Kawika-Singson-1.jpg?fit=1600%2C1066&quality=99&strip=all') center / cover;
+    width: 100%;
+    height: 100%;
+    grid-row: 8/9;
+    grid-column: 3 / 4 ;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1020px){
+    .inlineCards{
+        display: flex;
+        flex-direction: column;
+    }
+    .Card1{
+        width: 80%;
+        height: 150vh;
+        object-fit: cover;
+    }
+    .Card2{
+        width: 80%;
+        height: 150vh;
+        object-fit: cover;
+    }
+    .Card3{
+        width: 80%;
+        height: 200vh;
+        object-fit: cover;
+    }
+    .Card4{
+        width: 80%;
+        height: 150vh;
+        object-fit: cover;
+    }
+    .cards img{
+        width: 230px;
+        position: relative;
+        left: 40%;
+        top: 50%;
+    }
+
+}
+@media screen and (max-width: 1020px){
+    .card1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .gridParent{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 270px;
+        grid-gap: 15px;
+    }
+    .card2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }  
+    .card4{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .card7{
+        grid-column: 1/2;
+        grid-row: 2/2;
+    }
+    .card9{
+        grid-column: 2/3;
+        grid-row: 2/2;
+    }
+    .card10{
+        grid-column: 3/4;
+        grid-row: 2/2;
+    }
+}
+
+
+
+
+@media screen and (max-width: 785px){
+    .card1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .gridParent{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 270px;
+        grid-gap: 15px;
+    }
+    .card2{
+        grid-column: 1/4;
+        grid-row: 2/2;
+    }  
+    .card4{
+        grid-column: 1/4;
+        grid-row: 3/3;
+    }
+    .card5{
+        grid-column: 1/4;
+        grid-row: 6/6;
+    }
+    .card6{
+        grid-column: 1/4;
+        grid-row: 7/7;
+    }
+    .card7{
+        grid-column: 1/4;
+        grid-row: 4/4;
+    }
+    .card8{
+        grid-column: 1/4;
+        grid-row: 7/7;
+    }
+    .card9{
+        grid-column: 1/4;
+        grid-row: 4/4;
+    }
+    .card10{
+        grid-column: 1/4;
+        grid-row: 5/5;
+    }
+    .card11{
+        grid-column: 1/4;
+        grid-row: 8/8;
+    }
+    .card12{
+        grid-column: 1/4;
+        grid-row: 9/9;
+    }
+}
+
+
